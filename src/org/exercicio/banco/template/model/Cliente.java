@@ -76,7 +76,7 @@ public class Cliente {
     public ContaBancaria localizarContaNumero(int numero) {
         for (int i = 0; i < this.contas.size(); i++) {
             if (this.contas.get(i).getNumeroConta() == numero) {
-                System.out.println("Conta encontrada!");
+                System.out.print("Conta encontrada!");
                 return this.contas.get(i);
             } else {
                 System.out.print("Conta nao encontrada.");
@@ -100,7 +100,7 @@ public class Cliente {
      */
     public boolean localizarConta(ContaBancaria c) {
         if (this.contas.contains(c)) {
-            System.out.println("Conta encontrada!");
+            System.out.print("Conta encontrada!");
         } else {
             System.out.print("Conta nao encontrada.");
         }
