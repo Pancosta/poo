@@ -117,13 +117,12 @@ public class Cliente {
      * @return
      */
     public double balancoEntreContas() {
-        double saldo = 0;
+        double saldo = 0.0;
 
         for (int i = 0; i < this.contas.size(); i++) {
             saldo += this.contas.get(i).getSaldo();
         }
-        DecimalFormat df = new DecimalFormat("#.##");
-        System.out.print("Balanco entre contas: RS" + df.format(saldo));
+        System.out.print("Balanco entre contas: RS" + saldo);
         return saldo;
     }
 
